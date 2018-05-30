@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "pot": "node node_modules/vue-webpack-gettext/extract --output i18n/template.pot --src src",
+    "translations": "node node_modules/vue-webpack-gettext/compile --filename translations.json --output src --src i18n"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-gettext": "^2.0.31",
+    "vue-webpack-gettext": "^0.3.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.14",

@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <div>
+      <select name="language" v-model="$language.current">
+        <option v-for="(language, key) in $language.available" :key="key" :value="key">{{ language }}</option>
+      </select>
+    </div>
     <img src="./assets/logo.png">
   </div>
 </template>
