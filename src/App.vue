@@ -5,6 +5,12 @@
         <option v-for="(language, key) in $language.available" :key="key" :value="key">{{ language }}</option>
       </select>
     </div>
+    <div>
+      <span v-translate>This is my first message</span> 
+    </div>  
+    <div>
+      {{customText}}
+    </div>  
     <img src="./assets/logo.png">
   </div>
 </template>
@@ -13,6 +19,11 @@
 
 export default {
   name: 'app',
+  computed: {
+    customText ()  {
+      return this.$gettext("One more text");
+    }
+  },
   components: {
   }
 }

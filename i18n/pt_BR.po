@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-05-30 09:02-0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-30 09:11-0300\n"
+"PO-Revision-Date: 2018-05-30 09:12-0300\n"
 "Last-Translator: asd@asd.as\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -12,3 +13,11 @@ msgstr ""
 "X-Generator: Poedit 2.0.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/App.vue:9
+msgid "This is my first message"
+msgstr "Esta é minha primeira mensagem"
+
+#: src/App.vue:24
+msgid "One more text"
+msgstr "Mais um texto"
